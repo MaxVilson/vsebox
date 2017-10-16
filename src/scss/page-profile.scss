@@ -1,0 +1,20 @@
+.page-profile {
+
+  &__balance {
+    margin-top: 20px;
+  }
+
+  &__navigation {
+    margin-top: 10px;
+  }
+
+  &__top-wrapper {
+
+    @media (min-width: $screen-xl) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+  }
+}

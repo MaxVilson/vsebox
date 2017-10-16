@@ -1,0 +1,23 @@
+<div class="application">
+	<div class="application__phone">+7 (812) 855-75-75</div>
+	<a href="#" class="application__request-call">Заказать звонок</a>
+	<div class="application__bg">
+		<div class="application__title">Оставьте заявку на расчёт цены осмотра</div>
+		<form action="application.php" method="post" class="application-form">
+
+		  <input class="application-form__input" type="text" id="contacts" name="contacts" placeholder="Телефон или email">
+			<label class="application-form__label" for="contacts">Ваши контактные данные *</label>
+			
+			<input class="application-form__input" type="text" id="periodicity" name="periodicity" placeholder="Частота и дни недели">
+			<label class="application-form__label" for="periodicity">Режим осмотра</label>
+
+			<input class="application-form__input" type="number" id="amount" name="amount" placeholder="Число">
+			<label class="application-form__label" for="amount">Количество водителей</label>
+
+			<div class="application-form__text">* Поля обязательные для заполнения</div>
+
+			<input class="btn" type="submit" value="Рассчитать цену осмотра">
+
+		</form>
+	</div>
+</div>

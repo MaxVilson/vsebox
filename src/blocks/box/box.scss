@@ -1,0 +1,69 @@
+// В этом файле должны быть стили для БЭМ-блока box, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.box {
+
+  $block-name:                &; // #{$block-name}__element {}
+
+  margin-top: 30px;
+  width: 261px;
+  height: 261px;
+  background-image: url(../img/box.png);
+  background-repeat: no-repeat;
+
+  @media (min-width: $screen-xl) {
+    margin-top: 10px;
+    margin-left: 50px;
+  }
+
+  &__header {
+    position: relative;
+
+    @media (min-width: $screen-xl) {
+      padding-top: 20px;
+    }
+  }
+
+  &__name {
+    margin-left: 30px;
+    margin-top: 20px;
+    font-weight: 700;
+
+    @media (min-width: $screen-xl) {
+      margin-top: 0;
+    }
+  }
+
+  &__number {
+    margin-right: 13px;
+    color: #fff;
+  }
+
+  &__price {
+    position: absolute;
+    right: 53px;
+    top: 8px;
+
+    @media (min-width: $screen-xl) {
+      top: 28px;
+    }
+  }
+
+  &__surprice {
+    display: flex;
+    justify-content: center;
+
+    & img {
+      margin-top: 40px;
+    }
+  }
+
+  &__btn {
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-xl) {
+      margin-left: 95px;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+// В этом файле должны быть стили для БЭМ-блока navigation, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  $block-name:                &; // #{$block-name}__element {}
+
+  &__link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 7px 15px;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #293A36;
+    border-radius: 25px;
+
+    @media (min-width: $screen-xl) {
+      margin-left: 10px;
+    }
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    &--active {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+}

@@ -1,0 +1,25 @@
+// В этом файле должны быть стили для БЭМ-блока pay-system, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.pay-system {
+  width: 260px;
+
+  $block-name:                &; // #{$block-name}__element {}
+
+  &__title {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+
+  }
+
+}

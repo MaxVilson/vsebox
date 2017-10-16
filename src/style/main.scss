@@ -1,0 +1,20 @@
+/*
+* Third Party
+*/
+@import "../../bower_components/normalize.css/normalize.scss";
+
+
+/*
+* Custom
+*/
+@import "partials/variable.scss";
+
+@import "partials/global.scss";
+
+
+/*
+* Blocks
+*/
+@import "../blocks/header/header.scss";
+@import "../blocks/services/services.scss";
+@import "../blocks/application/application.scss";

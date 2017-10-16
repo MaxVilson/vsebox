@@ -1,0 +1,118 @@
+// В этом файле должны быть стили для БЭМ-блока main-nav, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+$gray-lightest:               hsl(0, 0%, 90%) !default;
+
+$screen-xs:                   0 !default;
+$screen-sm:                   480px !default;
+$screen-md:                   768px !default;
+$screen-lg:                   992px !default;
+$screen-xl:                   1200px !default;
+$screen-xxl:                  1800px !default;
+
+$menu-desktop-width:          $screen-xl !default;
+$toggler-part-height:         3px !default;
+$toggler-part-bg-color:       #000 !default;
+
+$transition-time:             0.3s !default;
+
+.main-nav {
+
+  $block-name:                &;
+  // #{$block-name}__element
+
+  position: relative;
+  z-index: 10;
+
+
+
+  // первый уровень
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    list-style: none;
+
+    @media (max-width: ($menu-desktop-width - 1)) {
+
+      // открытие/закрытие меню только в случае работающего JS
+
+      .js & {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.2s;
+      }
+
+      .js #{$block-name}--open & {
+        max-height: 100vh;
+        transition: max-height 0.6s;
+      }
+    }
+
+    @media (min-width: $menu-desktop-width) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    @media (min-width: $screen-xl) {
+      margin-right: 15px;
+    }
+
+    &--active {}
+  }
+
+  &__link {
+    display: block;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+      color: #44b8c5;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+    &:hover,
+    &:focus {
+
+    }
+  }
+
+  // переключатель
+
+  &__toggler {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    .no-js & {
+      display: none;
+    }
+
+    @media (min-width: $menu-desktop-width) {
+      display: none;
+    }
+  }
+
+  &__btn {
+    margin-top: 10px;
+    font-weight: 500;
+
+    @media (min-width: $screen-xl) {
+
+    }
+  }
+}

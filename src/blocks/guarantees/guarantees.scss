@@ -1,0 +1,58 @@
+// В этом файле должны быть стили для БЭМ-блока guarantees, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.guarantees {
+  background: rgba(255,255,255,0.1);
+
+  $block-name:                &; // #{$block-name}__element {}
+
+  &__title {
+    padding-top: 30px;
+    font-size: 35px;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+
+
+    @media (min-width: $screen-xl) {
+      flex-direction: initial;
+      justify-content: space-between;
+      align-items: initial;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    width: 280px;
+  }
+
+  &__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #ef5443;
+    border-radius: 50%;
+  }
+
+  &__subtitle {
+    color: #fff;
+  }
+
+  &__text {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

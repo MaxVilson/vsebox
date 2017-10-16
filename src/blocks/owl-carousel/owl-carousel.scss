@@ -1,0 +1,63 @@
+// В этом файле должны быть стили для БЭМ-блока owl-carousel, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.owl-carousel {
+  // В сборку стилей берется стилевой файл по умолчанию,
+  // поставляемый вместе с этим плагином: owl.carousel.css
+  // см. ./projectConfig.json
+
+  position: relative;
+  margin-top: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 2px solid #293A36;
+  border-radius: 8px;
+  background-color: #141a21;
+
+  &:before {
+    content: 'Live';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 20px;
+    height: 100%;
+    font-size: 18px;
+    color: #fff;
+    writing-mode: vertical-lr;
+    text-align: center;
+    border-radius: 7px 0 0 7px;
+    background-color: #44b8c5;
+  }
+
+  .owl-item {
+    position: relative;
+    z-index: 2;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: -1;
+      box-shadow: 0 0 35px 22px #b5ab9c;
+    }
+
+    &:hover {
+      border: 2px solid #b5ab9c;
+    }
+
+    & img {
+      width: 70px;
+      height: 70px;
+      background-size: cover;
+    }
+  }
+}
