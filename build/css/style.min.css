@@ -1522,6 +1522,7 @@ a:hover .thumb {
   margin-top: 40px;
   padding-top: 5px;
   padding-bottom: 5px;
+  height: 100px;
   border: 2px solid #293A36;
   border-radius: 8px;
   background-color: #141a21; }
