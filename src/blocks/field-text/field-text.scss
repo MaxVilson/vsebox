@@ -3,7 +3,7 @@
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 $gray-lighter:                hsl(0, 0%, 80%) !default;
-$border-color:                hsl(0, 0%, 60%) !default;
+$border-color:                #293A36;
 
 $text-color--muted:           hsl(0, 0%, 50%) !default;
 
@@ -30,7 +30,9 @@ $border-radius:               3px !default;
   }
 
   &__input-wrap {
+    position: relative;
     display: block;
+    margin-top: 20px;
   }
 
   &__input {
@@ -43,7 +45,7 @@ $border-radius:               3px !default;
     line-height: $line-height;
     font-size: 1em;
     font-family: inherit;
-    background-color: #fff;
+    background-color: #091220;
     border: 1px solid $border-color;
     border-radius: $border-radius;
     appearance: textfield;
@@ -85,6 +87,19 @@ $border-radius:               3px !default;
       min-height: calc(#{$textarea-height} + 2px);
       resize: vertical;
     }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    background-color: $main-color;
+    border: none;
+    border-radius: 5px;
   }
 
   &__help-text {

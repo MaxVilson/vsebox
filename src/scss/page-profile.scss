@@ -1,13 +1,5 @@
 .page-profile {
 
-  &__balance {
-    margin-top: 20px;
-  }
-
-  &__navigation {
-    margin-top: 10px;
-  }
-
   &__top-wrapper {
 
     @media (min-width: $screen-xl) {
@@ -16,5 +8,143 @@
       justify-content: space-between;
       margin-top: 20px;
     }
+  }
+
+  &__wrapper-balance {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+
+    @media (min-width: $screen-xl) {
+      flex-direction: row;
+      align-items: center;
+      order: 2;
+    }
+  }
+
+  &__balance {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  &__balance-number {
+    color: #ef5443;
+  }
+
+  &__balance-btn {
+    margin-top: 20px;
+
+    @media (min-width: $screen-xl) {
+      margin-top: 0;
+      margin-left: 20px;
+    }
+  }
+
+  &__navigation {
+    margin-top: 10px;
+
+    @media (min-width: $screen-xl) {
+      order: 1;
+    }
+  }
+
+  &__person-wrapper {
+
+    @media (min-width: $screen-xl) {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 70px;
+    }
+  }
+
+  &__person {
+    margin-top: 40px;
+
+    @media (min-width: $screen-xl) {
+      display: flex;
+      align-items: center;
+      margin-top: 0;
+    }
+  }
+
+  &__person-photo {
+    border-radius: 50%;
+    border: 10px solid #293A36;
+  }
+
+  &__person-text {
+    padding-left: 15px;
+  }
+
+  &__person-name {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  &__person-out {
+    margin-top: 10px;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.3);
+    border: none;
+    background-color: transparent;
+  }
+
+  &__box-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    @media (min-width: $screen-xl) {
+      margin-top: 0;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #293A36;
+    border-radius: 15px;
+  }
+
+  &__box-icon {
+    fill: #ef5443;
+  }
+
+  &__box-text {
+    color: rgba(255, 255, 255, 0.3);
+
+    & span {
+      font-weight: 700;
+      color: #fff;
+    }
+  }
+
+  &__dark-card {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #141a21;
+    border-radius: 15px;
+  }
+
+  &__dark-card-question {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+
+    & span {
+      color: #ef5443;
+    }
+  }
+
+  &__dark-card-text {
+    color: #fff;
   }
 }
