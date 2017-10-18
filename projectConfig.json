@@ -66,13 +66,13 @@
     "./src/scss/mixins.scss",
     "./src/scss/functions.scss",
     "./src/scss/global.scss",
-    "./src/scss/index.scss",
-    "./src/scss/page-profile.scss",
     "../../node_modules/owl.carousel/dist/assets/owl.carousel.css",
     "../../node_modules/nouislider/distribute/nouislider.css"
   ],
   "addCssAfter": [
-    "./src/scss/print.scss"
+    "./src/scss/print.scss",
+    "./src/scss/index.scss",
+    "./src/scss/page-profile.scss"
   ],
   "singleCompiled": [
     "./src/scss/blocks-library.scss"

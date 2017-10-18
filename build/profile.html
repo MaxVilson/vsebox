@@ -184,16 +184,94 @@
             </div>
           </div>
 
-          <div class="page-profile__dark-card">
-            <div class="page-profile__dark-card-question">У вас есть <span>партнерский код?</span></div>
-            <div class="page-profile__dark-card-text">Введите код и получите 50&#8381; на счёт прямо сейчас!</div>
-            <form action="a.php" class="page-profile__form" name="partner-code">
-              <label class="field-text">
-                <span class="field-text__input-wrap">
-                  <input class="field-text__input" type="text">
-                  <input class="field-text__btn" type="button" name="send" value="OK">
-                </span>
-              </label>
+          <div class="page-profile__dark-card-wrapper">
+            <div class="page-profile__dark-card">
+              <div class="page-profile__dark-card-header">У вас есть <span>партнерский код?</span></div>
+              <div class="page-profile__dark-card-text">Введите код и получите 50&#8381; на счёт прямо сейчас!</div>
+              <form action="a.php" class="page-profile__form" name="partner-code">
+                <label class="field-text">
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="text">
+                    <input class="field-text__btn" type="button" name="send" value="OK">
+                  </span>
+                </label>
+              </form>
+            </div>
+
+            <div class="page-profile__dark-card">
+              <div class="page-profile__dark-card-header">Приглашайте друзей и <span>зарабатывайте 5% от всех пополнений</span></div>
+              <div class="page-profile__dark-card-text">Отправьте свой уникальный код друзьям, и получайте по 5% от каждого пополнения баланса другом!</div>
+              <form action="a.php" class="page-profile__form" name="partner-invite">
+                <label class="field-text">
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input  page-profile__field-invite" value="52090816vZvDs">
+                  </span>
+                </label>
+              </form>
+            </div>
+          </div>
+
+          <div class="page-profile__dark-card  page-profile__dark-card-delivery">
+            <div class="page-profile__dark-card-title">Анкета для доставки товаров</div>
+            <form action="a.php" class="page-profile__form-delivery">
+              <div class="page-profile__form-row">
+                <label class="field-text  field-text-delivery">
+                  <span class="field-text__name">Фамилия Имя Отчество</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="text">
+                  </span>
+                </label>
+
+                <label class="field-text  field-text-delivery">
+                  <span class="field-text__name">Улица</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="text">
+                  </span>
+                </label>
+              </div>
+
+              <div class="page-profile__form-row">
+                <label class="field-text  field-text-delivery">
+                  <span class="field-text__name">Страна</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="text" value="Россия">
+                  </span>
+                </label>
+
+                <label class="field-text  field-text-delivery">
+                  <span class="field-text__name">Дом, корпус, строение</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="text">
+                  </span>
+                </label>
+              </div>
+
+              <div class="page-profile__form-row">
+                <label class="field-text  field-text-delivery">
+                  <span class="field-text__name">Город</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="text">
+                  </span>
+                </label>
+
+                <label class="field-text  field-text-delivery">
+                  <span class="field-text__name">Квартира / офис</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="text">
+                  </span>
+                </label>
+              </div>
+
+              <div class="page-profile__form-row">
+                <label class="field-text  field-text-delivery">
+                  <span class="field-text__name">Индекс</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="text">
+                  </span>
+                </label>
+
+                <input class="btn  page-profile__btn-delivery" type="button" name="btn-delivery" value="Сохранить">
+              </div>
             </form>
           </div>
         </div>
