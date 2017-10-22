@@ -5,9 +5,11 @@
      nav: false,
      loop: true,
      center: true,
-     autoWidth: true,
      autoplay: true,
-     margin: 20,
+     margin: 10,
+     mouseDrag: false,
+     touchDrag: false,
+     rtl: true,
      responsive : {
        0 : {
          items: 3,
@@ -22,10 +24,10 @@
          items: 3,
        },
        768 : {
-         items: 11,
+         items: 7,
        },
        1200 : {
-         items: 13,
+         items: 11,
        }
      }
    });

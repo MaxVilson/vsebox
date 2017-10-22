@@ -11,10 +11,15 @@
   height: 261px;
   background-image: url(../img/box.png);
   background-repeat: no-repeat;
+  cursor: pointer;
 
   @media (min-width: $screen-xl) {
     margin-top: 10px;
     margin-left: 50px;
+  }
+
+  &:hover {
+    color: #fff;
   }
 
   &__header {
@@ -27,11 +32,11 @@
 
   &__name {
     margin-left: 30px;
-    margin-top: 20px;
+    margin-top: 23px;
     font-weight: 700;
 
     @media (min-width: $screen-xl) {
-      margin-top: 0;
+      margin-top: 3px;
     }
   }
 

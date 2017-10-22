@@ -35,12 +35,17 @@
   .owl-item {
     position: relative;
     z-index: 2;
+    display: flex;
+    justify-content: center;
     margin-top: 2px;
     margin-bottom: 2px;
     padding: 5px;
+    width: 86px !important;
+    height: 86px;
     border: 2px solid transparent;
     border-radius: 50%;
     cursor: pointer;
+    transition: all 0.5s;
 
     &:after {
       content: '';
@@ -55,10 +60,23 @@
       border: 2px solid #b5ab9c;
     }
 
-    & img {
-      width: 70px;
-      height: 70px;
-      background-size: cover;
+    &:hover .owl-carousel__prize {
+      display: none !important;
     }
+
+    &:hover .owl-carousel__person {
+      opacity: 1;
+    }
+  }
+
+  &__prize {
+    width: 70px !important;
+    height: 70px !important;
+    background-size: cover;
+  }
+
+  &__person {
+    opacity: 0;
+    border-radius: 50%;
   }
 }

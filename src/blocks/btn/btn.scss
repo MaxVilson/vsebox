@@ -10,7 +10,7 @@ $line-height:                 1.375em;
 $field-padding-vertical:      0.3em !default;
 $field-padding-horizontal:    0.7em !default;
 
-$border-radius:               5px;
+$border-radius:               15px;
 
 .btn {
 
@@ -30,9 +30,9 @@ $border-radius:               5px;
   line-height: $line-height;
   text-decoration: none;
   text-transform: none;
-  color: #fff;
+  color: $main-color;
   border-radius: $border-radius;
-  border: 1px solid #293A36;
+  border: 2px solid $main-color;
   background-color: transparent;
   background-image: none;
   cursor: pointer;
@@ -44,7 +44,8 @@ $border-radius:               5px;
   }
 
   &:hover {
-    box-shadow: inset -6.5em 0 0 0 #ff7f82, inset 6.5em 0 0 0 #ff7f82;
+    color: #fff;
+    background-color: $main-color;
   }
 
   &--disabled,
@@ -60,25 +61,8 @@ $border-radius:               5px;
     }
   }
 
-
-
-  // &--main {
-  //   color: #fff;
-  //   background-color: $color-main;
-  //   border: 1px solid $color-main;
-
-  //   &:hover,
-  //   &:focus {
-  //     color: #fff;
-  //     background-color: darken($color-main, 10%);
-  //     border-color: darken($color-main, 12%);
-  //   }
-
-  //   &--disabled,
-  //   &:disabled {
-  //     color: #fff;
-  //     background-color: $color-main;
-  //     border-color: $color-main;
-  //   }
-  // }
+  &--accent {
+    color: #fff;
+    background-color: $main-color;
+  }
 }

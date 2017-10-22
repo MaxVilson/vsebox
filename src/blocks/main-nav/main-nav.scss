@@ -56,34 +56,43 @@ $transition-time:             0.3s !default;
       display: flex;
       flex-wrap: wrap;
       margin-top: 10px;
+      margin-left: 40px;
     }
   }
 
   &__item {
-    position: relative;
+
 
     @media (min-width: $screen-xl) {
       margin-right: 15px;
     }
 
-    &--active {}
+    &_ml {
+      @media (min-width: $screen-xl) {
+        margin-left: 40px;
+      }
+    }
   }
 
   &__link {
+    position: relative;
     display: block;
-    padding: 15px;
+    margin-top: 15px;
+    padding-bottom: 5px;
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
     color: #fff;
 
-    &:hover {
-      color: #44b8c5;
+    &--active {
+
+      @media (min-width: $screen-xl) {
+        border-bottom: 2px solid $main-color;
+      }
     }
 
-    @media (min-width: $screen-xl) {
-      padding-right: 15px;
-      padding-left: 15px;
+    &:hover {
+      color: $main-color;
     }
 
     &:hover,
@@ -96,7 +105,7 @@ $transition-time:             0.3s !default;
 
   &__toggler {
     position: absolute;
-    top: -50px;
+    top: -110px;
     right: 0;
     .no-js & {
       display: none;
@@ -108,7 +117,9 @@ $transition-time:             0.3s !default;
   }
 
   &__btn {
-    margin-top: 10px;
+    margin-top: 8px;
+    padding-right: 10px;
+    padding-left: 10px;
     font-weight: 500;
 
     @media (min-width: $screen-xl) {

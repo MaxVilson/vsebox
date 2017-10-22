@@ -16,25 +16,25 @@
     }
   }
 
-  &__wrapper-bottom {
+  &__counter {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 10px;
   }
 
-  &__block {
+  &__counter-block {
     text-align: center;
     color: #fff;
 
     &_ml {
-      margin-left: 40px;
+      margin-left: 20px;
     }
   }
 
   &__users {
     padding: 5px;
-    border-radius: 10px;
-    background-color: #293A36;
+    border-radius: 5px;
+    background-color: #293A40;
   }
 
   &__users-number {
@@ -42,6 +42,7 @@
   }
 
   &__users-text {
+    font-size: 12px;
     opacity: 0.3;
   }
 }

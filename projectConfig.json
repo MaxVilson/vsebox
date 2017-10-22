@@ -5,9 +5,9 @@
     "typo": [],
     "page-header": [],
     "page-footer": [],
-    "main-nav": [],
     "logo": [],
     "btn": [],
+    "main-nav": [],
     "sprite-svg": [],
     "sprite-png": [
       "__demo"
@@ -59,7 +59,9 @@
     "box": [],
     "guarantees": [],
     "pay-system": [],
-    "navigation": []
+    "navigation": [],
+    "link-return": [],
+    "title-h2": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
@@ -72,7 +74,9 @@
   "addCssAfter": [
     "./src/scss/print.scss",
     "./src/scss/index.scss",
-    "./src/scss/page-profile.scss"
+    "./src/scss/page-profile.scss",
+    "./src/scss/page-shop.scss",
+    "./src/scss/page-delivery.scss"
   ],
   "singleCompiled": [
     "./src/scss/blocks-library.scss"
