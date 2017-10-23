@@ -11,26 +11,29 @@
   text-transform: uppercase;
   color: #ffffff;
 
-  &:after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    z-index: -1;
-    width: 42%;
-    height: 1px;
-    background-color: #293A40;
-  }
+  @media (min-width: $screen-xl) {
 
-  &:before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 0;
-    z-index: -1;
-    width: 42%;
-    height: 1px;
-    background-color: #293A40;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      z-index: -1;
+      width: 42%;
+      height: 1px;
+      background-color: #293A40;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      z-index: -1;
+      width: 42%;
+      height: 1px;
+      background-color: #293A40;
+    }
   }
 
   &--big {
