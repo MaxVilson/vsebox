@@ -793,12 +793,12 @@ a.btn--disabled {
     font-size: 20px;
     line-height: 15px; }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-09617825830652926.png);
+  background-image: url(../img/sprite-035813967386565926.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px; }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-09617825830652926.png);
+  background-image: url(../img/sprite-035813967386565926.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px; }
@@ -2298,6 +2298,55 @@ a.pagination__item:hover, a.pagination__item:focus {
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding: 12px 30px; }
+.page-profile-products__title {
+  text-align: center;
+  color: #fff; }
+.page-profile-products__box-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px; }
+.page-profile-products__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 261px;
+  height: 170px;
+  background-image: url(../img/box2.png);
+  background-repeat: no-repeat; }
+.page-profile-products__box img {
+    background-size: cover; }
+.page-profile-products__wrapper-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px; }
+.page-profile-table__tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px; }
+.page-profile-table__th {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3); }
 .page-shop__navigation {
   -ms-flex-pack: distribute;
       justify-content: space-around; }

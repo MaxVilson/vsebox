@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Box</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      <header class="page-header" role="banner">
+        <div class="container">
+          <div class="page-header__wrapper">
+            <a href="index.html" class="logo  page-header__logo">
+              <img src="img/logo.png" alt="Box">
+              Box
+            </a>
+
+            <div class="page-header__counter">
+              <div class="page-header__counter-block">
+                <div class="page-header__users">
+                  <div class="page-header__users-number">940 000</div>
+                  <div class="page-header__users-text">Пользователей</div>
+                </div>
+              </div>
+
+              <div class="page-header__counter-block  page-header__counter-block_ml">
+                <div class="page-header__users">
+                  <div class="page-header__users-number">4564135</div>
+                  <div class="page-header__users-text">Открыто коробок</div>
+                </div>
+              </div>
+            </div>
+
+            <nav id="main-nav" class="main-nav" role="navigation">
+              <div id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></div>
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a href="index.html" class="main-nav__link">
+                    Коробки
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="shop.html" class="main-nav__link">
+                    Магазин
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="delivery.html" class="main-nav__link">
+                    Доставка
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="testimonials.html" class="main-nav__link">
+                    Отзывы
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="help.html" class="main-nav__link">
+                    Помощь
+                  </a>
+                </li>
+                <li class="main-nav__item  main-nav__item_ml  main-nav__item-user">
+                  <a href="profile.html" class="main-nav__link  main-nav__link--mt0">
+                    <img src="http://214010.selcdn.ru/ranbox/users/vk_5209081_min.jpg" alt="ava">
+                  </a>
+                  <div class="main-nav__link-user-wrapper">
+                    <a href="profile.html" class="main-nav__link-user-name">Мой профиль</a>
+                    <div class="main-nav__link-balance-wrapper">
+                      <div class="main-nav__link-user-balance">0 &#8381;</div>
+                      <button class="btn  main-nav__btn  main-nav__btn-balance"  data-toggle="modal"  data-target="#modal-demo-01">+</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main role="main" class="page-profile">
+        <div class="container">
+
+          @@include('blocks/owl-carousel/owl-carousel.html')
+
+          <div class="page-profile__top-wrapper">
+            <div class="page-profile__wrapper-balance">
+              <div class="page-profile__balance">
+                Баланс:
+                <span class="page-profile__balance-number">0 &#8381;</span>
+              </div>
+              <div class="btn  page-profile__balance-btn">Пополнить</div>
+            </div>
+
+            <div class="navigation  page-profile__navigation">
+              <a href="profile.html" class="navigation__link">Профиль</a>
+              <a href="profile-products.html" class="navigation__link">Мои товары</a>
+              <a href="profile-table.html" class="navigation__link  navigation__link--active">Мои доставки</a>
+              <a href="profile-partner.html" class="navigation__link">Партнёрская программа</a>
+            </div>
+          </div>
+
+          <h2 class="page-profile-products__title">Корзина доставки</h2>
+
+          <div class="page-profile-table">
+            <div class="page-profile-table__tr">
+              <div class="page-profile-table__th">Товары</div>
+              <div class="page-profile-table__th">Адрес</div>
+              <div class="page-profile-table__th">Статус</div>
+              <div class="page-profile-table__th">Трекинг-код</div>
+              <div class="page-profile-table__th">Дата оформления</div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>
