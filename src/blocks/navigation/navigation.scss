@@ -15,8 +15,10 @@
     padding: 7px 15px;
     color: #fff;
     text-decoration: none;
+    background-color: transparent;
     border: 1px solid #293A36;
     border-radius: 25px;
+    cursor: pointer;
 
     @media (min-width: $screen-xl) {
       margin-left: 10px;

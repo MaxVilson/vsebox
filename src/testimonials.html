@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>VseBox</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      <header class="page-header" role="banner">
+        <div class="container">
+          <div class="page-header__wrapper">
+            <a href="index.html" class="logo  page-header__logo">
+              <img src="img/logo.png" alt="Box">
+              Box
+            </a>
+
+            <div class="page-header__counter">
+              <div class="page-header__counter-block">
+                <div class="page-header__users">
+                  <div class="page-header__users-number">940 000</div>
+                  <div class="page-header__users-text">Пользователей</div>
+                </div>
+              </div>
+
+              <div class="page-header__counter-block  page-header__counter-block_ml">
+                <div class="page-header__users">
+                  <div class="page-header__users-number">4564135</div>
+                  <div class="page-header__users-text">Открыто коробок</div>
+                </div>
+              </div>
+            </div>
+
+            <nav id="main-nav" class="main-nav" role="navigation">
+              <div id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></div>
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a href="index.html" class="main-nav__link">
+                    Коробки
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="shop.html" class="main-nav__link">
+                    Магазин
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="delivery.html" class="main-nav__link">
+                    Доставка
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="testimonials.html" class="main-nav__link  main-nav__link--active">
+                    Отзывы
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="help.html" class="main-nav__link">
+                    Помощь
+                  </a>
+                </li>
+                <li class="main-nav__item  main-nav__item_ml">
+                  <button class="btn  main-nav__btn"  data-toggle="modal"  data-target="#modal-demo-01">Вход</button>
+                </li>
+                <li class="main-nav__item">
+                  <button class="btn  main-nav__btn"  data-toggle="modal"  data-target="#modal-demo-01">Регистрация</button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main role="main" class="page-delivery">
+        <div class="container">
+
+          @@include('blocks/owl-carousel/owl-carousel.html')
+
+          <div class="page-delivery__wrapper-top">
+            <a href="index.html" class="link-return  navigation__link  navigation__link--active"><Вернуться к списку коробок</a>
+            <a href="#" class="btn  btn--accent  page-delivery__btn-testimonial">Оставить отзыв</a>
+          </div>
+          <h2 class="title-h2  title-h2--big  page-delivery__title">Отзывы Покупателей</h2>
+            <div class="page-delivery__wrapper-testimonials">
+              <div class="page-delivery__testimonial"></div>
+            </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

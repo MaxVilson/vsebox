@@ -41,7 +41,6 @@
     margin-top: 2px;
     margin-bottom: 2px;
     height: 86px;
-    cursor: pointer;
     transition: all 0.5s;
 
     &:after {
@@ -53,22 +52,23 @@
       box-shadow: 0 0 35px 22px #b5ab9c;
     }
 
-    &:hover .owl-carousel__prize {
-      display: none !important;
-    }
-
-    &:hover .owl-carousel__person {
-      opacity: 1;
-    }
-
     & div {
       padding: 5px;
       border: 2px solid transparent;
       border-radius: 50%;
       transition: all 0.5s;
+      cursor: pointer;
 
       &:hover {
         border: 2px solid #b5ab9c;
+      }
+
+      &:hover .owl-carousel__prize {
+        display: none !important;
+      }
+
+      &:hover .owl-carousel__person {
+        opacity: 1;
       }
     }
   }

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Box</title>
+  <title>VseBox</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
@@ -81,7 +81,7 @@
                   </a>
                 </li>
                 <li class="main-nav__item">
-                  <a href="shop.html" class="main-nav__link  main-nav__link--active">
+                  <a href="shop.html" class="main-nav__link">
                     Магазин
                   </a>
                 </li>
@@ -91,7 +91,7 @@
                   </a>
                 </li>
                 <li class="main-nav__item">
-                  <a href="testimonials.html" class="main-nav__link">
+                  <a href="testimonials.html" class="main-nav__link  main-nav__link--active">
                     Отзывы
                   </a>
                 </li>
@@ -100,17 +100,11 @@
                     Помощь
                   </a>
                 </li>
-                <li class="main-nav__item  main-nav__item_ml  main-nav__item-user">
-                  <a href="profile.html" class="main-nav__link  main-nav__link--mt0">
-                    <img src="http://214010.selcdn.ru/ranbox/users/vk_5209081_min.jpg" alt="ava">
-                  </a>
-                  <div class="main-nav__link-user-wrapper">
-                    <a href="profile.html" class="main-nav__link-user-name">Мой профиль</a>
-                    <div class="main-nav__link-balance-wrapper">
-                      <div class="main-nav__link-user-balance">0 &#8381;</div>
-                      <button class="btn  main-nav__btn  main-nav__btn-balance"  data-toggle="modal"  data-target="#modal-demo-01">+</button>
-                    </div>
-                  </div>
+                <li class="main-nav__item  main-nav__item_ml">
+                  <button class="btn  main-nav__btn"  data-toggle="modal"  data-target="#modal-demo-01">Вход</button>
+                </li>
+                <li class="main-nav__item">
+                  <button class="btn  main-nav__btn"  data-toggle="modal"  data-target="#modal-demo-01">Регистрация</button>
                 </li>
               </ul>
             </nav>
@@ -118,7 +112,7 @@
         </div>
       </header>
 
-      <main role="main" class="page-shop">
+      <main role="main" class="page-delivery">
         <div class="container">
 
           <div class="owl-carousel" id="owl-carousel-demo">
@@ -165,123 +159,14 @@
           </div>
 
 
-          <a href="index.html" class="link-return navigation__link  navigation__link--active">< Вернуться к списку коробок</a>
-          <h2 class="title-h2">Магазин</h2>
-
-          <div class="navigation  page-shop__navigation">
-            <button type="button" name="button" class="navigation__link  navigation__link--active">Все</button>
-            <button type="button" name="button" class="navigation__link">Электроника</button>
-            <button type="button" name="button" class="navigation__link">Звук</button>
-            <button type="button" name="button" class="navigation__link">Для телефона</button>
-            <button type="button" name="button" class="navigation__link">Прочее</button>
+          <div class="page-delivery__wrapper-top">
+            <a href="index.html" class="link-return  navigation__link  navigation__link--active"><Вернуться к списку коробок</a>
+            <a href="#" class="btn  btn--accent  page-delivery__btn-testimonial">Оставить отзыв</a>
           </div>
-
-          <div class="page-shop__wrapper-box">
-            <div class="box-wrapper__left  page-shop__box-wrapper">
-              <div class="box  page-shop__box">
-                <div class="box__header">
-                  <div class="box__name">
-                     Нож кредитка
-                  </div>
-                  <div class="box__price">100&#8381;</div>
-                </div>
-                <div class="box__surprice  page-shop__box-surprice">
-                  <img src="img/surprice.png" alt="surprice">
-                </div>
-              </div>
-              <a href="#" class="btn  btn--accent  box__btn  page-shop__box-btn">Купить</a>
+          <h2 class="title-h2  title-h2--big  page-delivery__title">Отзывы Покупателей</h2>
+            <div class="page-delivery__wrapper-testimonials">
+              <div class="page-delivery__testimonial"></div>
             </div>
-
-            <div class="box-wrapper__left  page-shop__box-wrapper">
-              <div class="box  page-shop__box">
-                <div class="box__header">
-                  <div class="box__name">
-                    Нож кредитка
-                  </div>
-                  <div class="box__price">100&#8381;</div>
-                </div>
-                <div class="box__surprice  page-shop__box-surprice">
-                  <img src="img/surprice.png" alt="surprice">
-                </div>
-              </div>
-              <a href="#" class="btn  btn--accent  box__btn  page-shop__box-btn">Купить</a>
-            </div>
-
-            <div class="box-wrapper__left  page-shop__box-wrapper">
-              <div class="box  page-shop__box">
-                <div class="box__header">
-                  <div class="box__name">
-                    Нож кредитка
-                  </div>
-                  <div class="box__price">100&#8381;</div>
-                </div>
-                <div class="box__surprice  page-shop__box-surprice">
-                  <img src="img/surprice.png" alt="surprice">
-                </div>
-              </div>
-              <a href="#" class="btn  btn--accent  box__btn  page-shop__box-btn">Купить</a>
-            </div>
-
-            <div class="box-wrapper__left  page-shop__box-wrapper">
-              <div class="box  page-shop__box">
-                <div class="box__header">
-                  <div class="box__name">
-                    Нож кредитка
-                  </div>
-                  <div class="box__price">100&#8381;</div>
-                </div>
-                <div class="box__surprice  page-shop__box-surprice">
-                  <img src="img/surprice.png" alt="surprice">
-                </div>
-              </div>
-              <a href="#" class="btn  btn--accent  box__btn  page-shop__box-btn">Купить</a>
-            </div>
-
-            <div class="box-wrapper__left  page-shop__box-wrapper">
-              <div class="box  page-shop__box">
-                <div class="box__header">
-                  <div class="box__name">
-                    Нож кредитка
-                  </div>
-                  <div class="box__price">100&#8381;</div>
-                </div>
-                <div class="box__surprice  page-shop__box-surprice">
-                  <img src="img/surprice.png" alt="surprice">
-                </div>
-              </div>
-              <a href="#" class="btn  btn--accent  box__btn  page-shop__box-btn">Купить</a>
-            </div>
-
-            <div class="box-wrapper__left  page-shop__box-wrapper">
-              <div class="box  page-shop__box">
-                <div class="box__header">
-                  <div class="box__name">
-                    Нож кредитка
-                  </div>
-                  <div class="box__price">100&#8381;</div>
-                </div>
-                <div class="box__surprice  page-shop__box-surprice">
-                  <img src="img/surprice.png" alt="surprice">
-                </div>
-              </div>
-              <a href="#" class="btn  btn--accent  box__btn  page-shop__box-btn">Купить</a>
-            </div>
-
-            <div class="box-wrapper__left  page-shop__box-wrapper">
-              <div class="box  page-shop__box">
-                <div class="box__header">
-                  <div class="box__name">
-                    Нож кредитка
-                  </div>
-                  <div class="box__price">100&#8381;</div>
-                </div>
-                <div class="box__surprice  page-shop__box-surprice">
-                  <img src="img/surprice.png" alt="surprice">
-                </div>
-              </div>
-              <a href="#" class="btn  btn--accent  box__btn  page-shop__box-btn">Купить</a>
-            </div>
-          </div>
         </div>
       </main>
     </div>

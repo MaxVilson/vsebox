@@ -66,11 +66,17 @@
                     Помощь
                   </a>
                 </li>
-                <li class="main-nav__item  main-nav__item_ml">
-                  <button class="btn  main-nav__btn"  data-toggle="modal"  data-target="#modal-demo-01">Вход</button>
-                </li>
-                <li class="main-nav__item">
-                  <button class="btn  main-nav__btn"  data-toggle="modal"  data-target="#modal-demo-01">Регистрация</button>
+                <li class="main-nav__item  main-nav__item_ml  main-nav__item-user">
+                  <a href="profile.html" class="main-nav__link  main-nav__link--mt0">
+                    <img src="http://214010.selcdn.ru/ranbox/users/vk_5209081_min.jpg" alt="ava">
+                  </a>
+                  <div class="main-nav__link-user-wrapper">
+                    <a href="profile.html" class="main-nav__link-user-name">Мой профиль</a>
+                    <div class="main-nav__link-balance-wrapper">
+                      <div class="main-nav__link-user-balance">0 &#8381;</div>
+                      <button class="btn  main-nav__btn  main-nav__btn-balance"  data-toggle="modal"  data-target="#modal-demo-01">+</button>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </nav>
@@ -86,6 +92,13 @@
           <a href="index.html" class="link-return navigation__link  navigation__link--active">< Вернуться к списку коробок</a>
           <h2 class="title-h2">Магазин</h2>
 
+          <div class="navigation  page-shop__navigation">
+            <button type="button" name="button" class="navigation__link  navigation__link--active">Все</button>
+            <button type="button" name="button" class="navigation__link">Электроника</button>
+            <button type="button" name="button" class="navigation__link">Звук</button>
+            <button type="button" name="button" class="navigation__link">Для телефона</button>
+            <button type="button" name="button" class="navigation__link">Прочее</button>
+          </div>
 
           <div class="page-shop__wrapper-box">
             <div class="box-wrapper__left  page-shop__box-wrapper">
