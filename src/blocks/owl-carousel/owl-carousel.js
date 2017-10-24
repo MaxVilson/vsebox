@@ -6,7 +6,7 @@
      loop: true,
      center: true,
      autoplay: true,
-     margin: 10,
+     margin: -25,
      mouseDrag: false,
      touchDrag: false,
      rtl: true,

@@ -664,6 +664,7 @@ pre {
     color: #ef5443; }
 .logo {
   display: inline-block;
+  width: 184px;
   white-space: nowrap;
   font-size: 0; }
 .btn {
@@ -742,12 +743,12 @@ a.btn--disabled {
     padding-left: 10px;
     font-weight: 500; }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-016870283657367668.png);
+  background-image: url(../img/sprite-04654226760508.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px; }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-016870283657367668.png);
+  background-image: url(../img/sprite-04654226760508.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px; }
@@ -1501,7 +1502,6 @@ a:hover .thumb {
     margin-top: 2px;
     margin-bottom: 2px;
     padding: 5px;
-    width: 86px !important;
     height: 86px;
     border: 2px solid transparent;
     border-radius: 50%;
