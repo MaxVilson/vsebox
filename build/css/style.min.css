@@ -1469,6 +1469,7 @@ a:hover .thumb {
   position: relative;
   margin-top: 40px;
   padding-top: 5px;
+  overflow: hidden;
   padding-bottom: 5px;
   height: 100px;
   border: 2px solid #293A36;
@@ -1501,10 +1502,7 @@ a:hover .thumb {
             justify-content: center;
     margin-top: 2px;
     margin-bottom: 2px;
-    padding: 5px;
     height: 86px;
-    border: 2px solid transparent;
-    border-radius: 50%;
     cursor: pointer;
     -webkit-transition: all 0.5s;
     transition: all 0.5s; }
@@ -1516,12 +1514,18 @@ a:hover .thumb {
       z-index: -1;
       -webkit-box-shadow: 0 0 35px 22px #b5ab9c;
               box-shadow: 0 0 35px 22px #b5ab9c; }
-.owl-carousel .owl-item:hover {
-      border: 2px solid #b5ab9c; }
 .owl-carousel .owl-item:hover .owl-carousel__prize {
       display: none !important; }
 .owl-carousel .owl-item:hover .owl-carousel__person {
       opacity: 1; }
+.owl-carousel .owl-item div {
+      padding: 5px;
+      border: 2px solid transparent;
+      border-radius: 50%;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s; }
+.owl-carousel .owl-item div:hover {
+        border: 2px solid #b5ab9c; }
 .owl-carousel__prize {
     width: 70px !important;
     height: 70px !important;

@@ -6,7 +6,6 @@
      loop: true,
      center: true,
      autoplay: true,
-     margin: -25,
      mouseDrag: false,
      touchDrag: false,
      rtl: true,
@@ -27,7 +26,7 @@
          items: 7,
        },
        1200 : {
-         items: 11,
+         items: 9,
        }
      }
    });
