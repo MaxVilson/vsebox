@@ -7,61 +7,23 @@
     "page-footer": [],
     "logo": [],
     "btn": [],
+    "field-text": [],
     "main-nav": [],
     "sprite-svg": [],
     "sprite-png": [
       "__demo"
     ],
-    "field-text": [
-      "--error"
-    ],
-    "field-checkbox": [
-      "__input-wrap--error"
-    ],
-    "field-radio": [
-      "__input-wrap--error"
-    ],
-    "field-toggler": [],
-    "field-file": [
-      "--error"
-    ],
-    "field-range": [],
-    "field-select": [
-      "--error"
-    ],
-    "field-actions": [],
-    "form": [],
-    "code": [],
-    "thumb": [],
-    "alert": [],
-    "to-top": [],
-    "dropdown": [],
-    "menu": [],
-    "label": [],
-    "loader": [],
-    "table": [],
-    "table-responsive": [],
-    "table-mobile-scroll": [],
     "owl-carousel": [],
-    "swipe": [],
-    "pagination": [],
-    "breadcrumbs": [],
-    "nouislider": [],
-    "off-canvas": [],
     "burger": [],
-    "progress": [],
-    "media": [],
     "modal": [],
     "close": [],
-    "tabs": [],
-    "object-fit-polyfill": [],
-    "embed-responsive": [],
     "box": [],
     "guarantees": [],
     "pay-system": [],
     "navigation": [],
     "link-return": [],
-    "title-h2": []
+    "title-h2": [],
+    "roulette": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
@@ -76,7 +38,8 @@
     "./src/scss/index.scss",
     "./src/scss/page-profile.scss",
     "./src/scss/page-shop.scss",
-    "./src/scss/page-delivery.scss"
+    "./src/scss/page-delivery.scss",
+    "./src/scss/page-box.scss"
   ],
   "singleCompiled": [
     "./src/scss/blocks-library.scss"

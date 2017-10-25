@@ -1,0 +1,116 @@
+// В этом файле должны быть стили для БЭМ-блока roulette, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.roulette-line {
+    display: block;
+    padding: 13px 15px;
+    margin-top: 30px;
+}
+.roulette-line, .roulette-wrapper {
+    position: relative;
+    text-align: center;
+}
+.roulette-wrapper {
+    display: inline-block;
+    height: 154px;
+    width: 100%;
+    max-width: 1050px;
+    background-color: #141a21;
+    border: 2px solid #171f28;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: inset 0 15px 15px -10px rgba(13, 17, 22, .9), inset 0 -15px 15px -10px rgba(13, 17, 22, .9);
+}
+.roulette-wrapper__shadow {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    height: 150px;
+    width: 75px;
+    z-index: 1;
+}
+.roulette-wrapper__shadow_left {
+    left: 0;
+    box-shadow: inset 75px 0 55px -40px #0d1116;
+}
+.roulette-wrapper__shadow_right {
+    right: 0;
+    box-shadow: inset -75px 0 55px -40px #0d1116;
+}
+.roulette-wrapper__mid {
+    position: absolute;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    margin-left: -80px;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: 5;
+    box-shadow: 0 0 4px 0 rgba(255, 102, 0, .5), 0 0 10px 0 rgba(244, 187, 43, .5);
+}
+.roulette-wrapper__mid, .roulette-wrapper__mid-layer {
+    display: block;
+    height: 180px;
+    width: 160px;
+    border-radius: 16px;
+}
+.roulette-wrapper__mid-layer {
+    position: relative;
+    border-top: 15px solid #f4bb2b;
+    border-right: 5px solid #f4bb2b;
+    border-bottom: 15px solid #f4bb2b;
+    border-left: 5px solid #f4bb2b;
+    box-shadow: inset 0 0 7px 0 rgba(244, 187, 43, .5);
+}
+.roulette-wrapper__mid-line {
+    display: block;
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    margin-left: -65px;
+    height: 3px;
+    width: 130px;
+    background-color: #e39b29;
+    box-shadow: inset 0 0 2px 0 rgba(72, 87, 104, .5);
+    border-radius: 2px;
+}
+.roulette-wrapper__mid-line_top {
+    top: -8px;
+}
+.roulette-wrapper__mid-line_bottom {
+    bottom: -8px;
+}
+.roulette {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    margin-left: -525px;
+    width: 1050px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0;
+}
+.item, .roulette {
+    height: 150px;
+    text-align: center;
+}
+.item {
+    display: inline-block;
+    width: 150px;
+    line-height: 130px;
+    font-family: monospace;
+    font-size: 2em;
+    color: #000;
+    padding: 10px;
+}

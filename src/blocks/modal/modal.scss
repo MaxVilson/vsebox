@@ -71,11 +71,12 @@ $z-index-modal:               100 !default;
   }
 
   &__title {
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 20px;
     line-height: 1.4;
     font-weight: 400;
     color: #fff;
+    border-bottom: 2px solid #44b8c5;
 
     & div {
       font-size: 16px;
@@ -90,8 +91,8 @@ $z-index-modal:               100 !default;
 
   &__close {
     position: absolute !important;
-    top: 5px;
-    right: 5px;
+    top: 25px;
+    right: 15px;
   }
 
   &__body {
@@ -124,6 +125,45 @@ $z-index-modal:               100 !default;
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__field-number {
+    margin-top: 40px;
+  }
+
+  &__field-number-name {
+    text-align: center;
+  }
+
+  &__text {
+    margin-top: 10px;
+    color: #fff;
+  }
+
+  &__wrapper-bottom {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__pay {
+    margin-top: 15px;
+    margin-right: 13px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid transparent;
+    border-radius: 15px;
+    cursor: pointer;
+
+    &--active {
+      border: 2px solid #44b8c5;
+      background-color: transparent;
     }
   }
 }

@@ -1,0 +1,61 @@
+.page-box {
+
+  &__title {
+
+    &:before {
+
+      @media (min-width: $screen-xl) {
+        width: 40%;
+      }
+    }
+
+    &:after {
+
+      @media (min-width: $screen-xl) {
+        width: 40%;
+      }
+    }
+  }
+
+  &__wrapper-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  &__boxes-header {
+    margin-top: 50px;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__wrapper-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  &__wrapper-box {
+    margin-top: 20px;
+  }
+
+  &__wrapper-box-name {
+    margin-bottom: 10px;
+    margin-left: 25px;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 261px;
+    height: 170px;
+    background-image: url(../img/box2.png);
+    background-repeat: no-repeat;
+  }
+}
