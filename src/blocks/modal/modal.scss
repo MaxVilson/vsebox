@@ -128,11 +128,6 @@ $z-index-modal:               100 !default;
     }
   }
 
-  &__wrapper {
-    display: flex;
-    justify-content: center;
-  }
-
   &__field-number {
     margin-top: 40px;
   }
@@ -153,18 +148,20 @@ $z-index-modal:               100 !default;
   }
 
   &__pay {
+    position: relative;
     margin-top: 15px;
     margin-right: 13px;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid transparent;
-    border-radius: 15px;
-    cursor: pointer;
+  }
 
-    &--active {
-      border: 2px solid #44b8c5;
-      background-color: transparent;
-    }
+  &__pay-input {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 

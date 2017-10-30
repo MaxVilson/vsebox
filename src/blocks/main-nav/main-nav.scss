@@ -116,6 +116,11 @@ $transition-time:             0.3s !default;
     &:focus {
 
     }
+
+    & img {
+      width: 63px;
+      height: 63px;
+    }
   }
 
   &__link-user-wrapper {

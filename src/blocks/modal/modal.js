@@ -367,10 +367,3 @@
   })
 
 }(jQuery);
-
-
-// Modal pay click
-var iconPay = document.querySelector('.modal__pay');
-iconPay.onclick = function() {
-  iconPay.classList.toggle('modal__pay--active');
-};
