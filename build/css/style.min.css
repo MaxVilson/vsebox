@@ -931,12 +931,12 @@ textarea.field-text__input {
     font-size: 20px;
     line-height: 15px; }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-08713872842516284.png);
+  background-image: url(../img/sprite-02930309941528453.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px; }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-08713872842516284.png);
+  background-image: url(../img/sprite-02930309941528453.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px; }
@@ -1594,22 +1594,8 @@ textarea.field-text__input {
   font-size: 2em;
   color: #000;
   padding: 10px;
-  -webkit-animation-name: roulette;
-          animation-name: roulette;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: cubic-bezier;
-          animation-timing-function: cubic-bezier; }
-@-webkit-keyframes roulette {
-  0% {
-    margin-left: 2500px; }
-  100% {
-    margin-left: 0; } }
-@keyframes roulette {
-  0% {
-    margin-left: 2500px; }
-  100% {
-    margin-left: 0; } }
+  -webkit-transition: all 3s;
+  transition: all 3s; }
 .box-wrapper {
   position: relative;
   z-index: 1;
