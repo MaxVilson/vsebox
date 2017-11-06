@@ -88,6 +88,10 @@ $z-index-modal:               100 !default;
     color: #fff;
     border-bottom: 2px solid #44b8c5;
 
+    &--mt {
+      margin-top: 40px;
+    }
+
     & div {
       font-size: 16px;
     }
@@ -166,9 +170,13 @@ $z-index-modal:               100 !default;
   }
 
   &__wrapper-bottom {
-    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+
+    @media (min-width: $screen-md) {
+      margin-top: 10px;
+    }
   }
 
   &__pay {
@@ -243,7 +251,10 @@ $z-index-modal:               100 !default;
   &__btn {
 
     &--mr {
-      margin-right: 20px;
+
+      @media (min-width: $screen-md) {
+        margin-right: 20px;
+      }
     }
   }
 }

@@ -712,6 +712,8 @@ a.btn--disabled {
 .btn--accent {
     color: #fff;
     background-color: #ff513e; }
+.btn--xs-mt {
+    margin-top: 20px; }
 .field-text {
   display: block;
   margin-bottom: 0.6875em; }
@@ -931,12 +933,12 @@ textarea.field-text__input {
     font-size: 20px;
     line-height: 15px; }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-02930309941528453.png);
+  background-image: url(../img/sprite-02883874379422011.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px; }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-02930309941528453.png);
+  background-image: url(../img/sprite-02883874379422011.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px; }
@@ -1123,6 +1125,8 @@ textarea.field-text__input {
     font-weight: 400;
     color: #fff;
     border-bottom: 2px solid #44b8c5; }
+.modal__title--mt {
+      margin-top: 40px; }
 .modal__title div {
       font-size: 16px; }
 .modal__title-win {
@@ -1171,12 +1175,14 @@ textarea.field-text__input {
     margin-top: 10px;
     color: #fff; }
 .modal__wrapper-bottom {
-    margin-top: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
 .modal__pay {
     position: relative;
     margin-top: 15px;
@@ -1245,8 +1251,6 @@ textarea.field-text__input {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 60px; }
-.modal__btn--mr {
-    margin-right: 20px; }
 @-webkit-keyframes modal-backdrop-show {
   0% {
     opacity: 0; }
@@ -2023,6 +2027,12 @@ textarea.field-text__input {
 @media (min-width: 768px) {
     .container {
       width: 100%; }
+      .btn--xs-mt {
+        margin-top: 0; }
+      .modal__wrapper-bottom {
+        margin-top: 10px; }
+    .modal__btn--mr {
+      margin-right: 20px; }
   .page-profile__form-row {
     display: -webkit-box;
     display: -ms-flexbox;

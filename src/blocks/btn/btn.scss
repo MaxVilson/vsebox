@@ -65,4 +65,12 @@ $border-radius:               15px;
     color: #fff;
     background-color: $main-color;
   }
+
+  &--xs-mt {
+    margin-top: 20px;
+
+    @media (min-width: $screen-md) {
+      margin-top: 0;
+    }
+  }
 }
