@@ -1,6 +1,21 @@
 // В этом файле должны быть стили для БЭМ-блока box, его элементов,
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+.boxColor100 {
+  background-image: url(../img/green-box.png) !important;
+}
+
+.boxColor250 {
+  background-image: url(../img/red-box.png) !important;
+}
+
+.boxColor500 {
+  background-image: url(../img/blue-box.png) !important;
+}
+
+.boxColor1000 {
+  background-image: url(../img/orange-box.png) !important;
+}
 
 .box {
 

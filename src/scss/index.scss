@@ -105,18 +105,122 @@
         top: 50%;
         left: 50%;
         z-index: -1;
-        box-shadow: 0 0 45px 30px #b5ab9c;
+        box-shadow: 0 0 45px 35px #b5ab9c;
+      }
+
+      &:hover {
+        border: 2px solid #b5ab9c;
+      }
+
+      & img {
+        width: 70px;
+        height: 70px;
+        background-size: cover;
+      }
+    }
+  }
+
+    &__item-red {
+
+      @media (min-width: $screen-xl) {
+        position: relative;
+        z-index: 2;
+        margin-top: 10px;
+        margin-right: 30px;
+        padding: 10px;
+        border: 2px solid transparent;
+        border-radius: 50%;
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          z-index: -1;
+          box-shadow: 0 0 45px 35px #f2403d;
+        }
+      }
+
+    &:hover {
+      border: 2px solid #f2403d;
+    }
+  }
+
+  &__item-green {
+
+    @media (min-width: $screen-xl) {
+      position: relative;
+      z-index: 2;
+      margin-top: 10px;
+      margin-right: 30px;
+      padding: 10px;
+      border: 2px solid transparent;
+      border-radius: 50%;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: -1;
+        box-shadow: 0 0 45px 35px #5ad2a3;
+      }
+    }
+
+  &:hover {
+    border: 2px solid #5ad2a3;
+  }
+}
+
+  &__item-blue {
+
+    @media (min-width: $screen-xl) {
+      position: relative;
+      z-index: 2;
+      margin-top: 10px;
+      margin-right: 30px;
+      padding: 10px;
+      border: 2px solid transparent;
+      border-radius: 50%;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: -1;
+        box-shadow: 0 0 45px 35px #1c2b62;
+      }
+    }
+
+  &:hover {
+    border: 2px solid #1c2b62;
+  }
+}
+
+  &__item-orange {
+
+    @media (min-width: $screen-xl) {
+      position: relative;
+      z-index: 2;
+      margin-top: 10px;
+      margin-right: 30px;
+      padding: 10px;
+      border: 2px solid transparent;
+      border-radius: 50%;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: -1;
+        box-shadow: 0 0 45px 35px #644117;
       }
     }
 
     &:hover {
-      border: 2px solid #b5ab9c;
-    }
-
-    & img {
-      width: 70px;
-      height: 70px;
-      background-size: cover;
+      border: 2px solid #644117;
     }
   }
 }

@@ -1,4 +1,5 @@
-var btnRoulette = document.getElementById('btn-roulette');
+var btnRoulette = document.getElementById('btn-roulett' +
+  'e');
 var btnOpen = document.getElementById('openBox');
 var rouletteItem = document.querySelectorAll('.item');
 var rouletteCount = getRandomInt(0, 30) * 150;
